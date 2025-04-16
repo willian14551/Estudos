@@ -7,15 +7,15 @@ Aqui você encontrará todos os projetos que desenvolvi durante minha graduaçã
 
 📚 O que você vai encontrar por aqui:
 
-💻 Programas em Python, Java, C e outras linguagens
+Programas em Python, Java, C e outras linguagens
 
-🧩 Exercícios de lógica matemática e computacional
+Exercícios de lógica matemática e computacional
 
-🗃️ Projetos com estruturas de dados e algoritmos
+🗃Projetos com estruturas de dados e algoritmos
 
-🌐 Sistemas com foco em desenvolvimento web
+Sistemas com foco em desenvolvimento web
 
-🤖 Inteligência artificial
+Inteligência artificial
 
 ---
 
