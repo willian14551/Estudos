@@ -26,6 +26,7 @@ Os projetos estão divididos por disciplina.
 ---
 
 📫 Contato
+
 Fique à vontade para entrar em contato comigo:
 
 [Linkedin](https://www.linkedin.com/in/willian14551/)
