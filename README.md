@@ -9,9 +9,7 @@ Aqui você encontrará todos os projetos que desenvolvi durante minha graduaçã
 
 Programas em Python, Java, C e outras linguagens
 
-Exercícios de lógica matemática e computacional
-
-🗃Projetos com estruturas de dados e algoritmos
+Projetos com estruturas de dados e algoritmos
 
 Sistemas com foco em desenvolvimento web
 
