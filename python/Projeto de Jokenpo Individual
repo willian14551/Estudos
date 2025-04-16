@@ -1,5 +1,5 @@
 while True:
-    print("Vamos jogar, Jokenpô!")
+    print("--- Vamos jogar, Jokenpô! ---")
     print("(1) Humano contra Humano")
     print("(2) Humano contra Computador")
     print("(3) Computador contra Computador")
