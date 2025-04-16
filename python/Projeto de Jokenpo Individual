@@ -1,0 +1,719 @@
+while True:
+    print("Vamos jogar, Jokenpô!")
+    print("(1) Humano contra Humano")
+    print("(2) Humano contra Computador")
+    print("(3) Computador contra Computador")
+    print("(4) Sair")
+    print()
+
+    escolha = input("Escolha sua opção (1/2/3/4): ")
+    print()
+
+    if escolha == "1":
+        pontuacao_a = 0
+        pontuacao_b = 0
+        while True:
+            print("Jogadores, escolham suas opções")
+            print("(1) Pedra")
+            print("(2) Papel")
+            print("(3) Tesoura")
+            print("(4) Voltar")
+            print()
+            escolha_jogador_a = input("Jogador A escolha sua opção: ")
+
+            if escolha_jogador_a == "4":
+                print("Voltando...")
+                print()
+                break
+
+            print("Certo, agora aguarde o próximo jogador...")
+            print()
+            escolha_jogador_b = input("Jogador B escolha sua opção: ")
+            print()
+
+            if escolha_jogador_b == "4":
+                print("Muito bem, voltando...")
+                print()
+                break
+
+            if escolha_jogador_a == escolha_jogador_b:
+                print("E o resultado é...")
+                print("Empate!")
+                print()
+                print("Pontuação do Jogador A:", pontuacao_a)
+                print("Pontuação do Jogador B:", pontuacao_b)
+                print()
+
+                while True:
+                    print("Desejam continuar jogando?")
+                    print("(1) Continuar jogando")
+                    print("(2) Sair do jogo")
+                    print()
+
+                    continuar = input("Escolha sua opção: ")
+
+                    if continuar == "1":
+                        print("Continuando...")
+                        print()
+                        break
+                    elif continuar == "2":
+                        print("Obrigado por jogar!")
+                        print()
+                        exit()
+                    else:
+                        print("Opção inválida! Tente novamente.")
+                        print()
+                        continue
+
+            else:
+                print("E o resultado é...")
+                print()
+                
+                if escolha_jogador_a == "1" and escolha_jogador_b == "2":
+                    print("Jogador B venceu! Pedra ganha de Papel.")
+                    print()
+                    pontuacao_b = pontuacao_b + 1
+                    print("Pontuação do Jogador A:", pontuacao_a)
+                    print("Pontuação do Jogador B:", pontuacao_b)
+                    print()
+                    
+                    while True:
+                        print("Desejam continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+                if escolha_jogador_a == "1" and escolha_jogador_b == "3":
+                    print("Jogador A venceu! Pedra ganha de Tesoura.")
+                    print()
+                    pontuacao_a = pontuacao_a + 1
+                    print("Pontuação do Jogador A:", pontuacao_a)
+                    print("Pontuação do Jogador B:", pontuacao_b)
+                    print()
+
+                    while True:
+                        print("Desejam continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+                if escolha_jogador_a == "2" and escolha_jogador_b == "1":
+                    print("Jogador A venceu! Papel ganha de Pedra.")
+                    print()
+                    pontuacao_a = pontuacao_a + 1
+                    print("Pontuação do Jogador A:", pontuacao_a)
+                    print("Pontuação do Jogador B:", pontuacao_b)
+                    print()
+
+                    while True:
+                        print("Desejam continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+                if escolha_jogador_a == "2" and escolha_jogador_b == "3":
+                    print("Jogador B venceu! Tesoura ganha de Papel.")
+                    print()
+                    pontuacao_b = pontuacao_b + 1
+                    print("Pontuação do Jogador A:", pontuacao_a)
+                    print("Pontuação do Jogador B:", pontuacao_b)
+                    print()
+
+                    while True:
+                        print("Desejam continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+                if escolha_jogador_a == "3" and escolha_jogador_b == "1":
+                    print("Jogador B venceu! Pedra ganha de Tesoura.")
+                    print()
+                    pontuacao_b = pontuacao_b + 1
+                    print("Pontuação do Jogador A:", pontuacao_a)
+                    print("Pontuação do Jogador B:", pontuacao_b)
+                    print()
+
+                    while True:
+                        print("Desejam continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+                if escolha_jogador_a == "3" and escolha_jogador_b == "2":
+                    print("Jogador A venceu! Tesoura ganha de Papel.")
+                    print()
+                    pontuacao_a = pontuacao_a + 1
+                    print("Pontuação do Jogador A:", pontuacao_a)
+                    print("Pontuação do Jogador B:", pontuacao_b)
+                    print()
+
+                    while True:
+                        print("Desejam continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+    elif escolha == "2":
+        pontuacao_jogador = 0
+        pontuacao_computador = 0
+        while True:
+
+            print("Jogador, escolha sua opção:")
+            print("(1) Pedra")
+            print("(2) Papel")
+            print("(3) Tesoura")
+            print("(4) Voltar")
+            print()
+
+            escolha_jogador = input("Sua escolha: ")
+
+            if escolha_jogador == "4":
+                print("Voltando...")
+                print()
+                break
+
+            print("Certo, agora aguarde o computador...")
+            print()
+            
+            import random
+            lista = ("1" , "2" , "3")
+            escolha_computador = random.choice(lista)
+
+            print("Computador escolheu:", escolha_computador)
+            print()
+
+            if escolha_jogador == escolha_computador:
+                print("E o resultado é...")
+                print("Empate!")
+                print()
+                print("Sua pontuação:", pontuacao_jogador)
+                print("Pontuação do Computador:", pontuacao_computador)
+                print()
+
+                while True:
+                    print("Deseja continuar jogando?")
+                    print("(1) Continuar jogando")
+                    print("(2) Sair do jogo")
+                    print()
+
+                    continuar = input("Escolha sua opção: ")
+
+                    if continuar == "1":
+                        print("Continuando...")
+                        print()
+                        break
+                    elif continuar == "2":
+                        print("Obrigado por jogar!")
+                        print()
+                        exit()
+                    else:
+                        print("Opção inválida! Tente novamente.")
+                        print()
+                        continue
+
+            else:
+                print("E o resultado é...")
+                
+                if escolha_jogador == "1" and escolha_computador == "2":
+                    print("Computador venceu! Papel ganha de Pedra.")
+                    print()
+                    pontuacao_computador = pontuacao_computador + 1
+                    print("Sua pontuação:", pontuacao_jogador)
+                    print("Pontuação do Computador:", pontuacao_computador)
+                    print()
+                    
+                    while True:
+                        print("Deseja continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+                if escolha_jogador == "1" and escolha_computador == "3":
+                    print("Você venceu! Pedra ganha de Tesoura.")
+                    print()
+                    pontuacao_jogador = pontuacao_jogador + 1
+                    print("Sua pontuação:", pontuacao_jogador)
+                    print("Pontuação do Computador:", pontuacao_computador)
+                    print()
+
+                    while True:
+                        print("Deseja continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+                if escolha_jogador == "2" and escolha_computador == "1":
+                    print("Você venceu! Papel ganha de Pedra.")
+                    print()
+                    pontuacao_jogador = pontuacao_jogador + 1
+                    print("Sua pontuação:", pontuacao_jogador)
+                    print("Pontuação do Computador:", pontuacao_computador)
+                    print()
+
+                    while True:
+                        print("Deseja continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+                        
+                if escolha_jogador == "2" and escolha_computador == "3":
+                    print("Computador venceu! Tesoura ganha de Papel.")
+                    print()
+                    pontuacao_computador = pontuacao_computador + 1
+                    print("Sua pontuação:", pontuacao_jogador)
+                    print("Pontuação do Computador:", pontuacao_computador)
+                    print()
+
+                    while True:
+                        print("Deseja continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+                if escolha_jogador == "3" and escolha_computador == "1":
+                    print("Computador venceu! Pedra ganha de Tesoura.")
+                    print()
+                    pontuacao_computador = pontuacao_computador + 1
+                    print("Sua pontuação:", pontuacao_jogador)
+                    print("Pontuação do Computador:", pontuacao_computador)
+                    print()
+
+                    while True:
+                        print("Deseja continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+                if escolha_jogador == "3" and escolha_computador == "2":
+                    print("Você venceu! Tesoura ganha de Papel.")
+                    print()
+                    pontuacao_jogador = pontuacao_jogador + 1
+                    print("Sua pontuação:", pontuacao_jogador)
+                    print("Pontuação do Computador:", pontuacao_computador)
+                    print()
+
+                    while True:
+                        print("Deseja continuar jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+    elif escolha == "3":
+        pontuacao_computador_a = 0
+        pontuacao_computador_b = 0
+        while True:
+            print("Apenas computadores jogam, deseja continuar?")
+            print("(1) Sim, iniciar")
+            print("(2) Não, voltar")
+            print()
+
+            escolha_espectador = input("Escolha sua opção: ")
+
+            if escolha_espectador == "1":
+                print()
+                print("Os computadores A e B escolhem entre:")
+                print("(1) Pedra")
+                print("(2) Papel")
+                print("(3) Tesoura")
+                print()
+
+                import random
+                lista = ("1" , "2" , "3")
+                escolha_computador_a = random.choice(lista)
+                escolha_computador_b = random.choice(lista)
+
+                print("Computador A escolheu:", escolha_computador_a)
+                print("Computador B escolheu:", escolha_computador_b)
+                print()
+                print("E o resultado é...")
+
+                if escolha_computador_a == escolha_computador_b:
+                    print("Empate!")
+                    print()
+                    print("Pontuação do Computador A: ", pontuacao_computador_a)
+                    print("Pontuação do Computador B: ", pontuacao_computador_b)
+                    print()
+
+                    while True:
+                        print("Deseja que continuem jogando?")
+                        print("(1) Continuar jogando")
+                        print("(2) Sair do jogo")
+                        print()
+
+                        continuar = input("Escolha sua opção: ")
+
+                        if continuar == "1":
+                            print("Continuando...")
+                            print()
+                            break
+                        elif continuar == "2":
+                            print("Obrigado por jogar!")
+                            print()
+                            exit()
+                        else:
+                            print("Opção inválida! Tente novamente.")
+                            print()
+                            continue
+
+                else:
+                    if escolha_computador_a == "1" and escolha_computador_b == "2":
+                        print("Computador B venceu! Papel ganha de Pedra.")
+                        print()
+                        pontuacao_computador_b = pontuacao_computador_b + 1
+                        print("Pontuação do Computador A: ", pontuacao_computador_a)
+                        print("Pontuação do Computador B: ", pontuacao_computador_b)
+                        print()
+                        
+                        while True:
+                            print("Deseja que continuem jogando?")
+                            print("(1) Continuar jogando")
+                            print("(2) Sair do jogo")
+                            print()
+
+                            continuar = input("Escolha sua opção: ")
+
+                            if continuar == "1":
+                                print("Continuando...")
+                                print()
+                                break
+                            elif continuar == "2":
+                                print("Obrigado por jogar!")
+                                print()
+                                exit()
+                            else:
+                                print("Opção inválida! Tente novamente.")
+                                print()
+                                continue
+
+                    if escolha_computador_a == "1" and escolha_computador_b == "3":
+                        print("Computador A venceu! Pedra ganha de Tesoura.")
+                        print()
+                        pontuacao_computador_a = pontuacao_computador_a + 1
+                        print("Pontuação do Computador A: ", pontuacao_computador_a)
+                        print("Pontuação do Computador B: ", pontuacao_computador_b)
+                        print()
+
+                        while True:
+                            print("Deseja que continuem jogando?")
+                            print("(1) Continuar jogando")
+                            print("(2) Sair do jogo")
+                            print()
+
+                            continuar = input("Escolha sua opção: ")
+
+                            if continuar == "1":
+                                print("Continuando...")
+                                print()
+                                break
+                            elif continuar == "2":
+                                print("Obrigado por jogar!")
+                                print()
+                                exit()
+                            else:
+                                print("Opção inválida! Tente novamente.")
+                                print()
+                                continue
+
+                    if escolha_computador_a == "2" and escolha_computador_b == "1":
+                        print("Computador A venceu! Papel ganha de Pedra.")
+                        print()
+                        pontuacao_computador_a = pontuacao_computador_a + 1
+                        print("Pontuação do Computador A: ", pontuacao_computador_a)
+                        print("Pontuação do Computador B: ", pontuacao_computador_b)
+                        print()
+
+                        while True:
+                            print("Deseja que continuem jogando?")
+                            print("(1) Continuar jogando")
+                            print("(2) Sair do jogo")
+                            print()
+
+                            continuar = input("Escolha sua opção: ")
+
+                            if continuar == "1":
+                                print("Continuando...")
+                                print()
+                                break
+                            elif continuar == "2":
+                                print("Obrigado por jogar!")
+                                print()
+                                exit()
+                            else:
+                                print("Opção inválida! Tente novamente.")
+                                print()
+                                continue
+                            
+                    if escolha_computador_a == "2" and escolha_computador_b == "3":
+                        print("Computador B venceu! Tesoura ganha de Papel.")
+                        print()
+                        pontuacao_computador_b = pontuacao_computador_b + 1
+                        print("Pontuação do Computador A: ", pontuacao_computador_a)
+                        print("Pontuação do Computador B: ", pontuacao_computador_b)
+                        print()
+
+                        while True:
+                            print("Deseja que continuem jogando?")
+                            print("(1) Continuar jogando")
+                            print("(2) Sair do jogo")
+                            print()
+
+                            continuar = input("Escolha sua opção: ")
+
+                            if continuar == "1":
+                                print("Continuando...")
+                                print()
+                                break
+                            elif continuar == "2":
+                                print("Obrigado por jogar!")
+                                print()
+                                exit()
+                            else:
+                                print("Opção inválida! Tente novamente.")
+                                print()
+                                continue
+
+                    if escolha_computador_a == "3" and escolha_computador_b == "1":
+                        print("Computador B venceu! Pedra ganha de Tesoura.")
+                        print()
+                        pontuacao_computador_b = pontuacao_computador_b + 1
+                        print("Pontuação do Computador A: ", pontuacao_computador_a)
+                        print("Pontuação do Computador B: ", pontuacao_computador_b)
+                        print()
+
+                        while True:
+                            print("Deseja que continuem jogando?")
+                            print("(1) Continuar jogando")
+                            print("(2) Sair do jogo")
+                            print()
+
+                            continuar = input("Escolha sua opção: ")
+
+                            if continuar == "1":
+                                print("Continuando...")
+                                print()
+                                break
+                            elif continuar == "2":
+                                print("Obrigado por jogar!")
+                                print()
+                                exit()
+                            else:
+                                print("Opção inválida! Tente novamente.")
+                                print()
+                                continue
+
+                    if escolha_computador_a == "3" and escolha_computador_b == "2":
+                        print("Computador A venceu! Tesoura ganha de Papel.")
+                        print()
+                        pontuacao_computador_a = pontuacao_computador_a + 1
+                        print("Pontuação do Computador A: ", pontuacao_computador_a)
+                        print("Pontuação do Computador B: ", pontuacao_computador_b)
+                        print()
+
+                        while True:
+                            print("Deseja que continuem jogando?")
+                            print("(1) Continuar jogando")
+                            print("(2) Sair do jogo")
+                            print()
+
+                            continuar = input("Escolha sua opção: ")
+
+                            if continuar == "1":
+                                print("Continuando...")
+                                print()
+                                break
+                            elif continuar == "2":
+                                print("Obrigado por jogar!")
+                                print()
+                                exit()
+                            else:
+                                print("Opção inválida! Tente novamente.")
+                                print()
+                                continue
+
+            if escolha_espectador == "2":
+                print("Voltando...")
+                print()
+                break
+
+            else:
+                print("Opção inválida! Tente novamente.")
