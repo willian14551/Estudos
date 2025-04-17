@@ -7,7 +7,7 @@ while True:
     print("• Tesoura ganha do Papel (cortando-o);")
     print("• Papel ganha da Pedra (embrulhando-a).")
     print()
-    print("Modos de Jogo:")
+    print("Opções: ")
     print("(1) Humano contra Humano")
     print("(2) Humano contra Computador")
     print("(3) Computador contra Computador")
