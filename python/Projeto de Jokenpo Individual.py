@@ -14,10 +14,8 @@ while True:
     if escolha == "1":
         pontuacao_jogador_a = 0
         pontuacao_jogador_b = 0
-        partidas_jogadas_hh = 0
+        partidas_jogadas_hh_hh = 0
         numero_empates_hh = 0
-        percentual_a = 0.0
-        percentual_b = 0.0
 
         while True:
             print("Jogadores, escolham suas opções")
@@ -58,7 +56,6 @@ while True:
                 print()
                 print("Número de Partidas jogadas: ", partidas_jogadas_hh)
                 print("Número de Empates: ", numero_empates_hh)
-                print()
 
                 while True:
                     print("Desejam continuar jogando?")
@@ -111,7 +108,6 @@ while True:
 
                 percentual_a = (pontuacao_jogador_a / partidas_jogadas_hh) * 100 if partidas_jogadas_hh > 0 else 0.0
                 percentual_b = (pontuacao_jogador_b / partidas_jogadas_hh) * 100 if partidas_jogadas_hh > 0 else 0.0
-
                 print()
                 print("Pontuação do Jogador A:", pontuacao_jogador_a)
                 print("Pontuação do Jogador B:", pontuacao_jogador_b)
@@ -147,11 +143,6 @@ while True:
     elif escolha == "2":
         pontuacao_jogador = 0
         pontuacao_computador = 0
-        partidas_jogadas_hc = 0
-        numero_empates_hc = 0
-        percentual_jogador = 0.0
-        percentual_computador = 0.0
-
         while True:
             print("Jogador, escolha sua opção:")
             print("(1) Pedra")
@@ -176,20 +167,11 @@ while True:
             print()
 
             if escolha_jogador == escolha_computador:
-                numero_empates_hc = numero_empates_hc + 1
-                partidas_jogadas_hc = partidas_jogadas_hc + 1
-            
                 print("E o resultado é...")
                 print("Empate!")
                 print()
                 print("Sua pontuação:", pontuacao_jogador)
                 print("Pontuação do Computador:", pontuacao_computador)
-                print()
-                print("Percentual de Vitórias do Jogador:", percentual_jogador)
-                print("Percentual de Vitórias do Computador", percentual_computador)
-                print()
-                print("Número de Partidas jogadas: ", partidas_jogadas_hc)
-                print("Número de Empates: ", numero_empates_hc)
                 print()
 
                 while True:
@@ -204,19 +186,16 @@ while True:
                         print("Continuando...")
                         print()
                         break
-
                     elif continuar == "2":
                         print("Obrigado por jogar!")
                         print()
                         exit()
-
                     else:
                         print("Opção inválida! Tente novamente.")
                         print()
                         continue
 
             else:
-                partidas_jogadas_hc = partidas_jogadas_hc + 1
                 print("E o resultado é...")
                 
                 if escolha_jogador == "1" and escolha_computador == "2":
@@ -238,20 +217,10 @@ while True:
                     print("Você venceu! Tesoura ganha de Papel.")
                     pontuacao_jogador = pontuacao_jogador + 1
 
-                percentual_jogador = (pontuacao_jogador / partidas_jogadas_hc) * 100 if partidas_jogadas_hc > 0 else 0.0
-                percentual_computador = (pontuacao_computador / partidas_jogadas_hc) * 100 if partidas_jogadas_hc > 0 else 0.0
-
                 print()
                 print("Sua pontuação:", pontuacao_jogador)
                 print("Pontuação do Computador:", pontuacao_computador)
                 print()
-                print("Percentual de Vitórias do Jogador:", percentual_jogador)
-                print("Percentual de Vitórias do Computador", percentual_computador)
-                print()
-                print("Número de Partidas jogadas: ", partidas_jogadas_hc)
-                print("Número de Empates: ", numero_empates_hc)
-                print()
-
 
                 while True:
                     print("Deseja continuar jogando?")
@@ -277,10 +246,6 @@ while True:
     elif escolha == "3":
         pontuacao_computador_a = 0
         pontuacao_computador_b = 0
-        partidas_jogadas_cc = 0
-        numero_empates_cc = 0
-        percentual_computador_a = 0.0
-        percentual_computador_b = 0.0
         
         print("Apenas computadores jogam, deseja continuar?")
         print("(1) Sim, iniciar")
@@ -312,33 +277,18 @@ while True:
 
             if escolha_computador_a == escolha_computador_b:
                 print("Empate!")
-                numero_empates_cc = numero_empates_cc + 1
-                partidas_jogadas_cc = partidas_jogadas_cc + 1
-
             elif ((escolha_computador_a == "1" and escolha_computador_b == "3") or
                   (escolha_computador_a == "2" and escolha_computador_b == "1") or
                   (escolha_computador_a == "3" and escolha_computador_b == "2")):
                 print("Computador A venceu!")
-                pontuacao_computador_a = pontuacao_computador_a + 1
-                partidas_jogadas_cc = partidas_jogadas_cc + 1
-                
+                pontuacao_computador_a += 1
             else:
                 print("Computador B venceu!")
-                pontuacao_computador_b = pontuacao_computador_b + 1
-                partidas_jogadas_cc = partidas_jogadas_cc + 1
-                
-            percentual_computador_a = (pontuacao_computador_a / partidas_jogadas_cc) * 100 if partidas_jogadas_cc > 0 else 0.0
-            percentual_computador_b = (pontuacao_computador_b / partidas_jogadas_cc) * 100 if partidas_jogadas_cc > 0 else 0.0
+                pontuacao_computador_b += 1
 
             print()
             print("Pontuação do Computador A:", pontuacao_computador_a)
             print("Pontuação do Computador B:", pontuacao_computador_b)
-            print()
-            print("Percentual de Vitórias do Jogador:", percentual_computador_a)
-            print("Percentual de Vitórias do Computador", percentual_computador_b)
-            print()
-            print("Número de Partidas jogadas: ", partidas_jogadas_cc)
-            print("Número de Empates: ", numero_empates_cc)
             print()
 
             while True:
