@@ -78,10 +78,12 @@ while True:
                         print("Continuando...")
                         print()
                         break
+                        
                     elif continuar == "2":
                         print("Obrigado por jogar!")
                         print()
                         exit()
+                        
                     else:
                         print("Opção inválida! Tente novamente.")
                         print()
@@ -141,10 +143,12 @@ while True:
                         print("Continuando...")
                         print()
                         break
+                        
                     elif continuar == "2":
                         print("Obrigado por jogar!")
                         print()
                         exit()
+                        
                     else:
                         print("Opção inválida! Tente novamente.")
                         print()
