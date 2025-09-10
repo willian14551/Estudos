@@ -1,7 +1,7 @@
 🎓 Projetos da Faculdade
 
 Seja bem-vindo(a) ao meu repositório!
-Aqui você encontrará todos os projetos que desenvolvi durante minha graduação em Sistemas de Informação.
+Aqui você encontrará todos os projetos que desenvolvo durante meus estudos.
 
 ---
 
@@ -19,7 +19,7 @@ Inteligência artificial
 
 🧭 Organização
 
-Os projetos estão divididos por disciplina.
+Os projetos estão divididos por linguagem/disciplina.
 
 ---
 
