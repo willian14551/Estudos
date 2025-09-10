@@ -1,4 +1,4 @@
-🎓 Projetos da Faculdade
+🎓 Introdução
 
 Seja bem-vindo(a) ao meu repositório!
 Aqui você encontrará todos os projetos que desenvolvo durante meus estudos.
