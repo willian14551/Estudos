@@ -8,10 +8,23 @@ public class Podcast extends ConteudoDeAudio {
         this.nomeDoPrograma = nomeDoPrograma;
         this.numeroDoEpisodio = numeroDoEpisodio;
     }
-    public String getNomeDoPrograma(){
+
+    public String getNomeDoPrograma() {
         return nomeDoPrograma;
     }
-    public int getNumeroDoEpisodio(){
+    public int getNumeroDoEpisodio() {
         return numeroDoEpisodio;
     }
+
+    @Override
+    public void exibirDetalhes(){
+        super.exibirDetalhes();
+        System.out.println("Programa: " + this.nomeDoPrograma);
+        System.out.println("Episódio Nº: " + this.numeroDoEpisodio);
+    }
+
+    public void pularParaProximoEpisodio() {
+        System.out.println("Pulando para o episódio " + (this.numeroDoEpisodio + 1) + " do programa '" + this.nomeDoPrograma + "'.");
+    }
 }
+

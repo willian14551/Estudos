@@ -1,7 +1,7 @@
 public class ConteudoDeAudio {
-    protected String titulo;
-    protected int duracao;
-    protected String autor;
+    private String titulo;
+    private int duracao;
+    private String autor;
 
     public ConteudoDeAudio(String titulo, int duracao, String autor){
         this.titulo = titulo;
@@ -9,14 +9,27 @@ public class ConteudoDeAudio {
         this.autor = autor;
     }
     public ConteudoDeAudio(){
-
     }
+
+    public String getTitulo(){
+        return titulo;
+    }
+
+    public int getDuracao(){
+        return duracao;
+    }
+
+    public String getAutor(){
+        return autor;
+    }
+
     public void play(){
         System.out.println("Tocando o título" + titulo);
     }
     public void pausa(){
         System.out.println("Pausando o título" + titulo);
     }
+
 
     public void exibirDetalhes(){
         System.out.println("--- Detalhes ---");

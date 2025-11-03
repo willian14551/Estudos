@@ -8,10 +8,12 @@ public class Musica extends ConteudoDeAudio {
         this.album=album;
         this.genero=genero;
     }
-    public String getAlbum(){
+
+    public String getAlbum() {
         return album;
     }
-    public String getGenero(){
+
+    public String getGenero() {
         return genero;
     }
 
@@ -19,10 +21,10 @@ public class Musica extends ConteudoDeAudio {
     public void exibirDetalhes() {
         super.exibirDetalhes();
         System.out.println("Gênero: " + this.genero);
-        System.out.println("Album");
+        System.out.println("Album: " + this.album);
     }
 
-    public void adicionarAPlaylist(){
-        System.out.println("A musica '"  + this.titulo + "' foi adicionada à sua playlist.")
+    public void adicionarAPlaylist(String nomePlaylist) {
+        System.out.println("A música '" + getTitulo() + "' foi adicionada à playlist '" + nomePlaylist + "'.");
     }
 }
